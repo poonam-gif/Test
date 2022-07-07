@@ -1,0 +1,82 @@
+// var string = "Hi my name is poonam";
+//   console.log(string);
+
+// function find(){
+//   var pos = string.lastIndexOf('poonam');
+//       console.log(pos);
+
+  
+//   var y = string.slice(14,20);
+  
+  
+// //   if(y.length >= 4){
+// //     var newString = y.split('').reverse().join("");
+
+// //   console.log(newString);
+// //   }
+  
+//   var z= y.split('');
+//  // console.log(z);
+  
+//   var m= z.reverse();
+  
+//   var joinString=m.join("");
+  
+//   var join = string.replace("poonam",joinString);
+//     console.log(join);
+// }
+// find();
+
+
+const arr = [10,4,29,34, 4,29 ,63,3,87];
+
+const sorted=arr.sort((a,b)=>{
+  return a-b;
+});
+console.log(sorted);
+
+
+// finding max value
+
+const max=arr.reduce((a,b)=>{
+           return a>b?a:b;
+ })
+console.log(max);
+
+//find unique value/remove duplicate from an array
+
+const unique = arr.filter((value,i)=>{
+  return arr.indexOf(value)===i;
+})
+
+console.log(unique);
+
+var str = "Welcome to Interview";
+var str_arr = str.split(" ");
+var i = " ";
+for(var i=0;i < str_arr.length; i++ ){
+  if(str_arr[i].length > 7){
+    var new_str = str_arr[i];
+    console.log(new_str);
+  }
+  
+}
+
+var rev = new_str.split("").reverse().join("");
+console.log(rev);
+
+var output = str.replace("Interview",rev);
+
+// var sep_str = str.indexOf("Interview"); 
+
+// var sep_str1 = str.slice(11,20);
+
+// console.log(sep_str1);
+// var split_str = sep_str1.split("").reverse().join("");
+// console.log(split_str);
+
+
+//var output = ;
+
+console.log(output);
+

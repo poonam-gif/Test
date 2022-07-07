@@ -1,0 +1,36 @@
+let num = [2,3,4,4,5,6,7,3,6];
+
+let uniqueArr = num.filter((value,index)=>{
+  //console.log(value,index);
+  return num.indexOf(value)===index;
+})
+console.log(uniqueArr);
+
+let num=[1,2,3,3,4,4,5,6];
+ let unique =num.filter((value,i)=>{
+ return num.indexOf(value)===i
+ })
+
+
+// Find the sorted array
+
+const arr = [10,4,29,34, 4,29 ,63,3,87];
+
+const sorted=arr.sort((a,b)=>{
+  return a-b;
+});
+console.log(sorted);
+
+
+// finding max value
+
+const max=arr.reduce((a,b)=>{
+           return a>b?a:b;
+ })
+console.log(max);
+
+//find unique value/remove duplicate from an array
+
+const unique = arr.filter((value,i)=>{
+  return arr.indexOf(value)===i;
+})
